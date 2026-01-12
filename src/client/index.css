@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon-blue: #00D9FF;
+  --neon-violet: #8B5CF6;
+  --neon-cyan: #06B6D4;
+  --tech-green: #10B981;
+  --tech-magenta: #EC4899;
+  --electric-yellow: #FBBF24;
+}
+
+body {
+  @apply bg-[#0A0E27] text-slate-50 font-sans overflow-hidden;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at 50% 50%, #0F1419 0%, #0A0E27 100%);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl;
+    transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .text-glow-blue {
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+  }
+}
+
+/* Star field animation */
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: stars-move 100s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes stars-move {
+  from { transform: translateY(0); }
+  to { transform: translateY(-1000px); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0E27; 
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; 
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; 
+}
+
+/* SCI-FI / INDUSTRIAL UTILITIES */
+.bg-carbon-fiber {
+  background-color: #1a1a1a;
+  background-image: 
+    linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000),
+    linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
+}
+
+.bg-brushed-metal {
+  background: 
+    linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.1) 100%),
+    repeating-linear-gradient(90deg, #333 0px, #333 1px, #444 2px, #333 3px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), inset 0 -1px 0 rgba(0,0,0,0.5);
+}
+
+.bg-brushed-metal-dark {
+  background: 
+    linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.2) 100%),
+    repeating-linear-gradient(90deg, #1a1a1a 0px, #1a1a1a 1px, #222 2px, #1a1a1a 3px);
+}
+
+.shadow-physical-btn {
+  box-shadow: 
+    0 4px 0 #0f172a,
+    0 5px 5px rgba(0,0,0,0.5),
+    inset 0 1px 0 rgba(255,255,255,0.1);
+  transition: all 0.1s ease;
+}
+
+.shadow-physical-btn:active {
+  transform: translateY(4px);
+  box-shadow: 
+    0 0 0 #0f172a,
+    inset 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.shadow-physical-btn-red {
+  box-shadow: 
+    0 6px 0 #7f1d1d,
+    0 10px 10px rgba(0,0,0,0.5),
+    inset 0 2px 0 rgba(255,255,255,0.2),
+    0 0 20px rgba(220, 38, 38, 0.3);
+}
+
+.shadow-physical-btn-red:active {
+  transform: translateY(6px);
+  box-shadow: 
+    0 0 0 #7f1d1d,
+    inset 0 5px 10px rgba(0,0,0,0.5),
+    0 0 30px rgba(220, 38, 38, 0.6);
+}
+
+.screen-glare {
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.05) 100%);
+  pointer-events: none;
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(rgba(0, 217, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.scanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 217, 255, 0.02) 50%);
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.7);
+}
+
+.glow-box {
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.2), inset 0 0 10px rgba(0, 217, 255, 0.1);
+}
+
+.panel-border {
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  position: relative;
+}
+
+.panel-border::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #00D9FF;
+  border-left: 2px solid #00D9FF;
+}
+
+.panel-border::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #00D9FF;
+  border-right: 2px solid #00D9FF;
+}
+
+select option {
+  background-color: #0A0E27;
+  color: #f8fafc;
+}
+
+/* --- THEMES --- */
+
+/* 
+   GLOBAL OVERRIDES 
+   We use !important to override Tailwind utility classes that are hardcoded in components.
+   Selectors target specific utility classes used in the app.
+*/
+
+/* === MINIMAL THEME (Light/Clean) === */
+.theme-minimal body {
+  background: #f8fafc !important; /* Slate 50 */
+  color: #0f172a !important;
+}
+
+/* Backgrounds & Panels */
+.theme-minimal header,
+.theme-minimal .glass-panel,
+.theme-minimal [class*="bg-[#0A0E27]"],
+.theme-minimal [class*="bg-[#0F1419]"],
+.theme-minimal [class*="bg-[#0F172A]"],
+.theme-minimal [class*="bg-[#050505]"],
+.theme-minimal [class*="bg-[#050914]"],
+.theme-minimal [class*="bg-slate-900"],
+.theme-minimal [class*="bg-[#161b22]"],
+.theme-minimal [class*="bg-black"] {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  border-color: #e2e8f0 !important; /* Slate 200 */
+  color: #0f172a !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Remove dark gradients in minimal */
+.theme-minimal [class*="from-[#0F172A]"] {
+    background: #f8fafc !important;
+    opacity: 1 !important;
+}
+
+/* Specific component fixes */
+.theme-minimal [class*="bg-slate-800"] {
+    background-color: #f1f5f9 !important; /* Slate 100 */
+    border-color: #cbd5e1 !important;
+    color: #334155 !important;
+}
+
+/* Text Colors */
+.theme-minimal .text-white,
+.theme-minimal .text-slate-50,
+.theme-minimal .text-slate-200,
+.theme-minimal .text-slate-300 {
+  color: #1e293b !important; /* Slate 800 */
+}
+
+.theme-minimal .text-slate-400 {
+  color: #64748b !important; /* Slate 500 */
+}
+
+/* Text Contrast Fixes for Light Theme */
+.theme-minimal .text-blue-400 { color: #2563eb !important; }
+.theme-minimal .text-purple-400 { color: #9333ea !important; }
+.theme-minimal .text-green-400 { color: #16a34a !important; }
+.theme-minimal .text-cyan-400 { color: #0891b2 !important; }
+.theme-minimal .text-red-400 { color: #dc2626 !important; }
+.theme-minimal .text-orange-400 { color: #ea580c !important; }
+.theme-minimal .text-yellow-400, 
+.theme-minimal .text-yellow-300 { color: #ca8a04 !important; }
+
+/* Borders */
+.theme-minimal [class*="border-white/10"],
+.theme-minimal [class*="border-slate-700"] {
+  border-color: #cbd5e1 !important; /* Slate 300 */
+}
+
+/* Inputs */
+.theme-minimal input, 
+.theme-minimal select, 
+.theme-minimal textarea {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    color: #0f172a !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.theme-minimal input::placeholder,
+.theme-minimal textarea::placeholder {
+    color: #94a3b8 !important;
+}
+.theme-minimal select option {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+}
+
+
+/* === DARK THEME (Pure Black/OLED) === */
+.theme-dark body {
+  background: #000000 !important;
+  color: #e2e8f0 !important;
+}
+
+.theme-dark header,
+.theme-dark .glass-panel,
+.theme-dark [class*="bg-[#0A0E27]"],
+.theme-dark [class*="bg-[#0F1419]"],
+.theme-dark [class*="bg-[#0F172A]"],
+.theme-dark [class*="bg-[#050505]"],
+.theme-dark [class*="bg-[#050914]"],
+.theme-dark [class*="bg-slate-900"],
+.theme-dark [class*="bg-[#161b22]"] {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  border-color: #333333 !important;
+}
+
+.theme-dark [class*="bg-slate-800"] {
+    background-color: #111111 !important;
+    border-color: #333 !important;
+}
+
+.theme-dark select option {
+    background-color: #000000 !important;
+    color: #e2e8f0 !important;
+}
+
+
+/* === NEON THEME (Cyberpunk) === */
+.theme-neon body {
+  background: #050510 !important;
+}
+
+.theme-neon header,
+.theme-neon .glass-panel,
+.theme-neon [class*="bg-[#0F1419]"],
+.theme-neon [class*="bg-[#0F172A]"],
+.theme-neon [class*="bg-[#050505]"],
+.theme-neon [class*="bg-[#050914]"],
+.theme-neon [class*="bg-slate-900"],
+.theme-neon [class*="bg-[#161b22]"] {
+  background-color: rgba(5, 5, 16, 0.9) !important;
+  border: 1px solid #00D9FF !important;
+  box-shadow: 0 0 5px rgba(0, 217, 255, 0.1), inset 0 0 20px rgba(0, 217, 255, 0.05) !important;
+}
+
+.theme-neon .text-slate-400 {
+    color: #94a3b8 !important;
+}
+
+.theme-neon [class*="bg-slate-800"] {
+    background-color: rgba(0, 217, 255, 0.1) !important;
+    border-color: #00D9FF !important;
+    color: #00D9FF !important;
+}
+
+.theme-neon select option {
+    background-color: #050510 !important;
+    color: #00D9FF !important;
+}
+
+
+/* === 3D THEME (Neumorphismish) === */
+.theme-3d body {
+  background: #23232e !important;
+}
+
+.theme-3d header,
+.theme-3d .glass-panel,
+.theme-3d [class*="bg-[#0F1419]"],
+.theme-3d [class*="bg-[#0F172A]"],
+.theme-3d [class*="bg-[#050505]"],
+.theme-3d [class*="bg-[#050914]"],
+.theme-3d [class*="bg-slate-900"],
+.theme-3d [class*="bg-[#161b22]"] {
+  background: linear-gradient(145deg, #2a2a35, #1d1d25) !important;
+  box-shadow:  8px 8px 16px #191923, -8px -8px 16px #2d2d39 !important;
+  border: none !important;
+}
+
+/* 3D specific for floor to look like a desk or smooth surface */
+.theme-3d [class*="from-[#0F172A]"] {
+    background: #23232e !important;
+    opacity: 1 !important;
+}
+
+.theme-3d [class*="bg-slate-800"] {
+    background: linear-gradient(145deg, #2a2a35, #1d1d25) !important;
+    box-shadow:  3px 3px 6px #191923, -3px -3px 6px #2d2d39 !important;
+    border: none !important;
+}
+
+/* Fix for 3D Theme Select Options (No Gradients allowed on options) */
+.theme-3d select option,
+.theme-3d select option[class*="bg-"] {
+    background: #23232e !important; /* Solid color required for options */
+    color: #e2e8f0 !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}

@@ -1,0 +1,84 @@
+
+> software-factory@0.0.1 build:client
+> tsc && vite build
+
+src/client/components/ErrorBoundary.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(2,18): error TS6133: 'AnimatePresence' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(4,20): error TS6133: 'TrendingUp' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(4,48): error TS6133: 'Cloud' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(5,19): error TS6133: 'Zap' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(5,47): error TS6133: 'Search' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(7,27): error TS6133: 'Database' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(7,54): error TS6133: 'Wifi' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(7,60): error TS6133: 'Globe' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(8,30): error TS6133: 'MessageSquare' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(8,53): error TS6133: 'Users' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(9,3): error TS6133: 'ClipboardList' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(9,26): error TS6133: 'LinkIcon' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(9,36): error TS6133: 'FileWarning' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(9,49): error TS6133: 'PieChart' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(9,59): error TS6133: 'UserPlus' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(9,69): error TS6133: 'Table' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(9,76): error TS6133: 'CheckSquare' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(228,22): error TS7031: Binding element 'stage' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(228,29): error TS7031: Binding element 'isOpen' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(228,37): error TS7031: Binding element 'onClose' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(228,46): error TS7031: Binding element 'onSave' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(228,54): error TS7031: Binding element 'projectData' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(285,17): error TS7006: Parameter 'prev' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(289,17): error TS7006: Parameter 'prev' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(347,41): error TS7006: Parameter 'field' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(347,48): error TS7006: Parameter 'idx' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(394,42): error TS7006: Parameter 'opt' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(417,39): error TS7006: Parameter 'opt' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(477,19): error TS7031: Binding element 'systemLoad' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(477,31): error TS7031: Binding element 'onOpenSidebar' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(525,20): error TS7031: Binding element 'isOpen' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(525,28): error TS7031: Binding element 'toggle' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(525,36): error TS7031: Binding element 'config' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(598,20): error TS7031: Binding element 'currentStage' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(598,34): error TS6133: 'isProcessing' is declared but its value is never read.
+src/client/components/FactoryAssemblyLine.tsx(598,34): error TS7031: Binding element 'isProcessing' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(598,48): error TS7031: Binding element 'isXray' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(663,24): error TS7031: Binding element 'stage' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(663,31): error TS7031: Binding element 'isActive' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(663,41): error TS7031: Binding element 'isCompleted' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(663,54): error TS7031: Binding element 'isWaiting' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(663,65): error TS7031: Binding element 'onOpenForm' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(932,20): error TS7006: Parameter 'prev' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(988,24): error TS7006: Parameter 'prev' implicitly has an 'any' type.
+src/client/components/FactoryAssemblyLine.tsx(1033,20): error TS7006: Parameter 'prev' implicitly has an 'any' type.
+src/client/components/IntakeForm.tsx(3,10): error TS6133: 'Play' is declared but its value is never read.
+src/client/components/IntakeForm.tsx(3,108): error TS6133: 'Zap' is declared but its value is never read.
+src/client/components/IntakeForm.tsx(3,124): error TS6133: 'Award' is declared but its value is never read.
+src/client/components/RequirementsConsole.tsx(4,3): error TS6133: 'Users' is declared but its value is never read.
+src/client/components/RequirementsConsole.tsx(4,25): error TS6133: 'MessageSquare' is declared but its value is never read.
+src/client/components/RequirementsConsole.tsx(4,58): error TS6133: 'LinkIcon' is declared but its value is never read.
+src/client/components/RequirementsConsole.tsx(6,17): error TS6133: 'AlertTriangle' is declared but its value is never read.
+src/client/components/RequirementsConsole.tsx(6,46): error TS6133: 'Search' is declared but its value is never read.
+src/client/components/RequirementsConsole.tsx(6,54): error TS6133: 'Save' is declared but its value is never read.
+src/engine/main.ts(118,43): error TS6133: 'inputData' is declared but its value is never read.
+src/engine/main.ts(144,18): error TS6133: 'archData' is declared but its value is never read.
+src/engine/main.ts(164,19): error TS6133: 'designData' is declared but its value is never read.
+src/engine/main.ts(193,16): error TS6133: 'planData' is declared but its value is never read.
+src/engine/main.ts(218,12): error TS6133: 'codeData' is declared but its value is never read.
+src/engine/main.ts(221,13): error TS6133: 'types' is declared but its value is never read.
+src/engine/main.ts(246,18): error TS6133: 'qaData' is declared but its value is never read.
+src/engine/main.ts(268,23): error TS6133: 'deployData' is declared but its value is never read.
+src/engine/main.ts(287,22): error TS6133: 'monitorData' is declared but its value is never read.
+src/engine/main.ts(287,40): error TS6133: 'inputData' is declared but its value is never read.
+src/engine/main.ts(336,19): error TS6133: 'valuationData' is declared but its value is never read.
+src/engine/main.ts(336,39): error TS6133: 'inputData' is declared but its value is never read.
+src/server/main.ts(88,25): error TS6133: 'request' is declared but its value is never read.
+src/server/main.ts(88,34): error TS6133: 'reply' is declared but its value is never read.
+src/server/main.ts(107,41): error TS2339: Property 'processStage' does not exist on type 'SoftwareFactoryEngine'.
+src/server/main.ts(122,73): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/server/main.ts(123,111): error TS2339: Property 'id' does not exist on type 'never'.
+src/server/main.ts(126,71): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/server/main.ts(127,108): error TS2339: Property 'id' does not exist on type 'never'.
+src/server/main.ts(132,9): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ C: never[]; FR: never[]; D: never[]; Q: never[]; R: never[]; }'.
+src/server/main.ts(133,9): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ C: never[]; FR: never[]; D: never[]; Q: never[]; R: never[]; }'.
+src/server/main.ts(133,34): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ C: never[]; FR: never[]; D: never[]; Q: never[]; R: never[]; }'.
+src/server/main.ts(140,26): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/server/main.ts(143,111): error TS2339: Property 'id' does not exist on type 'never'.
